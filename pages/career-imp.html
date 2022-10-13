@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Significance Of Career</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="images/bulb3.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			
+			html { 
+				scrollbar-color: rgb(0, 110, 255)
+				 black;
+				}
+			
+			html::-webkit-scrollbar {
+				width: 0.6vw;
+			}
+
+			html::-webkit-scrollbar-thumb {
+				background-color: rgb(0, 110, 255);
+				border-radius: 20ch;
+			}
+
+			html::-webkit-scrollbar-thumb:hover {
+				background-color: rgb(81, 177, 255);
+			}
+		
+			html::-webkit-scrollbar-track {
+				background-color: black;
+			}
+
+		</style>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 class="hd1"><a href="index.html">Profession</a></h1>
+						<nav class="links">
+							<ul>
+								<li class="list2"><a href="engineering.html" target="_blank" rel="noreferrer noopener">Engineering</a></li>
+								<li><a href="medical.html" target="_blank" rel="noreferrer noopener">Medical</a></li>
+								<li><a href="arts.html" target="_blank" rel="noreferrer noopener">Arts</a></li>
+								<li><a href="commerce.html" target="_blank" rel="noreferrer noopener">Commerce</a></li>
+								<li><a href="law.html" target="_blank" rel="noreferrer noopener">Law</a></li>
+								<li><a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">Government Jobs</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input id = "searchID" type="search"  placeholder="Search" onchange = "searchPage()" list="course-list" />
+										<datalist id="course-list">
+											<option value="engineering"></option>
+											<option value="medical"></option>
+											<option value="arts"></option>
+											<option value="commerce"></option>
+											<option value="law"></option>
+											<option value="government Jobs"></option>
+										</datalist>
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<script>
+						const searchPage = () => {
+							const searchValue = document.getElementById("searchID").value;
+
+							if( searchValue === "engineering"  ){
+								window.open("./engineering.html");
+							}
+
+							if( searchValue === "medical" ){
+								window.open("./medical.html");
+							}
+
+							if( searchValue === "arts"  ){
+								window.open("./arts.html");
+							}
+
+							if( searchValue === "commerce" ){
+								window.open("./commerce.html");
+							}
+
+							if( searchValue === "law" ){
+								window.open("./law.html");
+							}
+
+							if( searchValue === "government jobs" ){
+								window.open("./gov-jobs.html");
+							}
+						}
+					</script>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="search" id="anewSearch" placeholder="Search" onchange = "newSearch()" />
+							</form>
+					</section>
+
+					<script>
+						const newSearch = () => {
+							const searchValue = document.getElementById("anewSearch").value;
+							const newValue = document.getElementById("searchID").value;
+
+							if( (searchValue || newValue) === "engineering"  ){
+								window.open("./engineering.html");
+							}
+
+							if( (searchValue || newValue) === "medical" ){
+								window.open("./medical.html");
+							}
+
+							if( (searchValue || newValue)  === "arts"  ){
+								window.open("./arts.html");
+							}
+
+							if( (searchValue || newValue) === "commerce" ){
+								window.open("./commerce.html");
+							}
+
+							if( (searchValue || newValue) === "law" ){
+								window.open("./law.html");
+							}
+
+							if( (searchValue || newValue) === "government jobs" ){
+								window.open("./gov-jobs.html");
+							}
+						}
+						</script>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="engineering.html" target="_blank" rel="noreferrer noopener">
+											<h3>Engineering</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="medical.html" target="_blank" rel="noreferrer noopener">
+											<h3>Medical</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="arts.html" target="_blank" rel="noreferrer noopener">
+											<h3>Arts</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="commerce.html" target="_blank" rel="noreferrer noopener">
+											<h3>Commerce</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="law.html" target="_blank" rel="noreferrer noopener">
+											<h3>Law</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">
+											<h3>Government Jobs</h3>
+										
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="signup/index.php" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2 align="center"><a href="#">Why career matters the most</a></h2>
+									
+									</div>
+									
+								</header>
+								<span class="image featured"><img src="images/career2.png" alt="" /></span>
+<p>Choosing the type of work you’ll do, therefore, is arguably one of the most important decisions you can make. You can begin choosing a career by taking the following steps:
+									<br> <br>
+									1. Perform a self-assessment. <br>
+									2. Identify your must-haves.<br>
+									3. Make a list of jobs to explore.<br>
+									4. Research jobs and employers.<br>
+									5. Get training (if you need it) and update your resume.<br>
+									6. Find and apply for jobs.<br>
+									7. Continue growing and learning.<br> <br>
+									Selecting a career path can take weeks, months or even years as you continue learning what you want and need in a job. It’s important to note that you may have the option to change your path multiple times in your life, making the ability to choose a new career a valuable life skill.
+								<br><br>
+									<strong><u>Perform a self-assessment:</strong></u>
+									Before making any important decision, it’s a good idea to take time for self-reflection. Choosing a career is no different. In this step, you’ll reflect on what kind of work environment you want to be in, what type of work you enjoy, who you want to work with, and more.
+									
+									As you’re reflecting, you may want to write down your notes. These can be helpful references as you’re evaluating job descriptions later on.
+									
+									Here are a few questions to get you started. Try not to dwell on the questions but rather, write down the first thoughts that come to mind. If you’re not sure of some answers, trusted friends or family may be able to give guidance.
+									<br> <br>
+									Self-assessment questions to consider:
+									What are your key values? <br>
+									Example answers: Financial stability, helping others, independence <br> <br>
+									What soft skills do you possess? <br>
+									Example answers: Time management, communication, confidence, problem-solving <br><br>
+									What technical skills do you possess?<br>
+									Example answers: Data analytics, planning, research, multilingual, photography <br><br>
+									What natural aptitudes do you have?<br>
+									Example answers: Writing, leadership, selling, project management, communicating, planning, technical problem-solving<br><br>
+									What’s your personality like?<br>
+									Example answers: Myers-Briggs personality type, quiet, outgoing, confident, aggressive, loyal<br><br>
+									What are you interested in?<br>
+									Example answers: Technology, writing, medicine, design<br><br>
+									<strong><u>Identify your must-haves:</u></strong>
+									Next, take some time to identify your must-haves in a job. These can range from anything like salary or travel to benefits and location. It might be helpful to return to the question-answer activity when recording what you can’t be flexible with when it comes to your career: <br>
+									<br>	
+									1. Do you need to earn a certain salary? <br>
+									2. Do you require certain benefits like specific healthcare coverage or certain amount of time off?<br>
+									3. Could you take a job that involved travel?<br>
+									4. Do you need to work in a certain location?<br>
+									5. Do you require any sort of flexibility to work from home?<br>
+									6. Do you need to adhere to a specific job title or level?<br>
+									7. Are there certain tasks you need to or do not want to perform?<br>
+									8. Is there a certain work environment you cannot operate well in?<br>
+									It is important to know what you need from a job ahead of time. For example, if you need to earn a consistent salary, you may want to avoid freelance work. Once you’ve determined your must-haves, you can use the research phase to determine jobs that might not work for you.
+									
+		
+									<br><br>
+									<strong><u>Make a list of jobs to explore:</u></strong>
+									After understanding a bit more about yourself and your needs in a job, start looking for jobs that sound interesting or desirable to you. If there’s a job you don’t know much about, write it down and research it later. You may end up finding an interesting career path. Additionally, remember that job titles don’t always represent the actual job perfectly. While a title might not seem desirable, the job description might be a good fit for you. To start your list of jobs, here are some considerations:
+									<br> <br>
+									1.Use your network. Do you know friends or colleagues with jobs that seem interesting? Tap into your network to explore jobs both they might hold, and jobs they think you may be interested in and/or good at. <br><br>
+									
+									2. Find interesting industries. Is there a particular industry that seems appealing? Are you naturally drawn to a particular category of work like design, fashion, business or education? Think about friends, family members or acquaintances who have compelling or attractive jobs.<br><br>
+									
+									3. Identify things you enjoy doing. Are there any activities or tasks that make time pass quickly? This can be anything from designing presentations to organizing information to working as part of a group. If you do enjoy designing presentations, for example, write down careers that might involve doing this work.<br><br>
+									
+									4. List your goals and values. Consider where you want to be in two, five and 10 years. Is there a particular title or level you want to achieve? Is there a location you want to be in or a certain lifestyle you want to have? Taking time to think about the future can help you identify jobs that will be a long-term fit.<br><br>
+									
+									5. Evaluate your strengths and talents. What are you good at? Whether you identify soft or hard skills, determining your strengths paired with things you enjoy can help you find a career that sets you up for success. If you’re good at organizing and interpreting data, you might write down jobs like data analyst, computer scientist or data scientist.
+									Research and narrow down your list.
+			
+									</p>
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart">0</a></li>
+										<li><a href="#" class="icon solid fa-comment">0</a></li>
+									</ul>
+								</footer>
+							</article>
+							<div class="container">
+								<div class="text"></div>
+							</div>
+					</div>
+
+					
+				<br><br><br>
+					<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/imAmit2908?t=Kl-rYjHt8HVRtYoLeF9vgQ&s=08" class="icon brands fa-twitter" target="_blank" rel="noreferrer noopener"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100010560334003" class="icon brands fa-facebook-f" target="_blank" rel="noreferrer noopener"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/theamitchauhan__29?utm_medium=copy_link" class="icon brands fa-instagram" target="_blank" rel="noreferrer noopener"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:kshitijtiwari@protonmail.com" class="icon solid fa-envelope" target="_blank" rel="noreferrer noopener"><span class="label">Email</span></a></li>
+						</ul>
+						
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
