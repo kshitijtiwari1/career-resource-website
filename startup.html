@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get Hired By A Startup</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="images/bulb3.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			
+			html { 
+				scrollbar-color: rgb(0, 110, 255)
+				 black;
+				}
+			
+			html::-webkit-scrollbar {
+				width: 0.6vw;
+			}
+
+			html::-webkit-scrollbar-thumb {
+				background-color: rgb(0, 110, 255);
+				border-radius: 20ch;
+			}
+
+			html::-webkit-scrollbar-thumb:hover {
+				background-color: rgb(81, 177, 255);
+			}
+		
+			html::-webkit-scrollbar-track {
+				background-color: black;
+			}
+
+		</style>
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 class="hd1"><a href="index.html">Profession</a></h1>
+						<nav class="links">
+							<ul>
+								<li class="list2"><a href="engineering.html" target="_blank" rel="noreferrer noopener">Engineering</a></li>
+								<li><a href="medical.html" target="_blank" rel="noreferrer noopener">Medical</a></li>
+								<li><a href="arts.html" target="_blank" rel="noreferrer noopener">Arts</a></li>
+								<li><a href="commerce.html" target="_blank" rel="noreferrer noopener">Commerce</a></li>
+								<li><a href="law.html" target="_blank" rel="noreferrer noopener">Law</a></li>
+								<li><a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">Government Jobs</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input id = "searchID" type="search"  placeholder="Search" onchange = "searchPage()" list="course-list" />
+										<datalist id="course-list">
+											<option value="engineering"></option>
+											<option value="medical"></option>
+											<option value="arts"></option>
+											<option value="commerce"></option>
+											<option value="law"></option>
+											<option value="government Jobs"></option>
+										</datalist>
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<script>
+						const searchPage = () => {
+							const searchValue = document.getElementById("searchID").value;
+
+							if( searchValue === "engineering"  ){
+								window.open("./engineering.html");
+							}
+
+							if( searchValue === "medical" ){
+								window.open("./medical.html");
+							}
+
+							if( searchValue === "arts"  ){
+								window.open("./arts.html");
+							}
+
+							if( searchValue === "commerce" ){
+								window.open("./commerce.html");
+							}
+
+							if( searchValue === "law" ){
+								window.open("./law.html");
+							}
+
+							if( searchValue === "government jobs" ){
+								window.open("./gov-jobs.html");
+							}
+						}
+					</script>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+						<section>
+							<form class="search" method="get" action="#">
+								<input type="search" id="anewSearch" placeholder="Search" onchange = "newSearch()" />
+							</form>
+					</section>
+
+					<script>
+						const newSearch = () => {
+							const searchValue = document.getElementById("anewSearch").value;
+							const newValue = document.getElementById("searchID").value;
+
+							if( (searchValue || newValue) === "engineering"  ){
+								window.open("./engineering.html");
+							}
+
+							if( (searchValue || newValue) === "medical" ){
+								window.open("./medical.html");
+							}
+
+							if( (searchValue || newValue)  === "arts"  ){
+								window.open("./arts.html");
+							}
+
+							if( (searchValue || newValue) === "commerce" ){
+								window.open("./commerce.html");
+							}
+
+							if( (searchValue || newValue) === "law" ){
+								window.open("./law.html");
+							}
+
+							if( (searchValue || newValue) === "government jobs" ){
+								window.open("./gov-jobs.html");
+							}
+						}
+						</script>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="engineering.html" target="_blank" rel="noreferrer noopener">
+											<h3>Engineering</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="medical.html" target="_blank" rel="noreferrer noopener">
+											<h3>Medical</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="arts.html" target="_blank" rel="noreferrer noopener">
+											<h3>Arts</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="commerce.html" target="_blank" rel="noreferrer noopener">
+											<h3>Commerce</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="law.html" target="_blank" rel="noreferrer noopener">
+											<h3>Law</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">
+											<h3>Government Jobs</h3>
+										
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="signup/index.php" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2 align="center"><a href="#">How to get hired at a startup</a></h2>
+									
+									</div>
+									
+								</header>
+								<span class="image featured"><img src="images/startup2.jpeg" alt="" /></span>
+<p>
+    Working for a startup company can be an exciting opportunity. While there are some pros and cons, working for a new business with growth potential can also lead to exponential rewards.
+
+    Startups recruit for several positions — from web developers and engineers to more unique opportunities like customer success managers. Some startups even hire people with little to no experience, especially if they are motivated professionals willing to put in the time and effort to do great things for the company.
+    <br><br>
+    <strong>What to expect working at a startup</strong> <br><br>
+A startup is a new company founded by one or more entrepreneurs with the goal of providing a unique product or service to the market. Startup founders begin their business vision by determining what the market is lacking. They hire a team of highly skilled professionals to develop a new product or service and present it in an exciting way.
+
+Startups usually seek funding from venture capitalists. They tend to consist of a few employers who juggle multiple roles within the company. For instance, a startup in its early stages may hire a product engineer who also manages customer support.
+
+Startups also may work with limited budgets and resources to launch their offerings. Over time, successful startups see rapid expansion and profits.
+<br><br>
+<strong>How to get hired at a startup</strong> <br>
+    If you already know that you want to work for a startup, you’re probably wondering the best way to find a job. Here are a few tips:
+<br><br>
+    1. Discover the startup field you want to work in: There’s a startup in nearly every job sector, so it’s easy to narrow down your job choices if you know the field you want to pursue.
+    <br><br>
+    2. Research startup companies based on your skill set: Take stock of your strengths and begin researching companies that may be a good fit. You also may want to decide if you prefer working for a younger startup or a more established one that is looking to scale.
+    <br><br>
+    3. Work your network: Because people who work at startups wear many hats, you may be more successful in finding a job through networking versus traditional recruiting and hiring practices.
+    <br><br>
+    4. Prepare for interviews: Work on your elevator pitch and identify how your skills match the job description. Make sure your resume is designed effectively to pique the interest of a startup hiring manager who may have several competing demands.
+
+</p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart">0</a></li>
+										<li><a href="#" class="icon solid fa-comment">0</a></li>
+									</ul>
+								</footer>
+							</article>
+							<div class="container">
+								<div class="text"></div>
+							</div>
+					</div>
+
+					
+				<br><br><br>
+					<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/imAmit2908?t=Kl-rYjHt8HVRtYoLeF9vgQ&s=08" class="icon brands fa-twitter" target="_blank" rel="noreferrer noopener"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100010560334003" class="icon brands fa-facebook-f" target="_blank" rel="noreferrer noopener"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/theamitchauhan__29?utm_medium=copy_link" class="icon brands fa-instagram" target="_blank" rel="noreferrer noopener"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:kshitijtiwari@protonmail.com" class="icon solid fa-envelope" target="_blank" rel="noreferrer noopener"><span class="label">Email</span></a></li>
+						</ul>
+						
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

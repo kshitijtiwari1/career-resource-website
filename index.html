@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | Profession</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="images/bulb3.png">
+		<style>
+			
+			html { 
+				scrollbar-color: rgb(0, 110, 255)
+				 black;
+				}
+			
+			html::-webkit-scrollbar {
+				width: 0.6vw;
+			}
+
+			html::-webkit-scrollbar-thumb {
+				background-color: rgb(0, 110, 255);
+				border-radius: 20ch;
+			}
+
+			html::-webkit-scrollbar-thumb:hover {
+				background-color: rgb(81, 177, 255);
+			}
+		
+			html::-webkit-scrollbar-track {
+				background-color: black;
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1 class="hd1"><a href="index">Profession</a></h1>
+						<nav class="links">
+							<ul class="list1">
+								<li class="list2"><a href="engineering.html" target="_blank" rel="noreferrer noopener">Engineering</a></li>
+								<li><a href="medical.html" target="_blank" rel="noreferrer noopener">Medical</a></li>
+								<li><a href="arts.html" target="_blank" rel="noreferrer noopener">Arts</a></li>
+								<li><a href="commerce.html" target="_blank" rel="noreferrer noopener">Commerce</a></li>
+								<li><a href="law.html" target="_blank" rel="noreferrer noopener">Law</a></li>
+								<li><a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">Government Jobs</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input id = "searchID" type="search"  placeholder="Search" onchange = "searchPage()" list="course-list">
+										
+										<datalist id="course-list">
+											<option value="engineering"></option>
+											<option value="medical"></option>
+											<option value="arts"></option>
+											<option value="commerce"></option>
+											<option value="law"></option>
+											<option value="government Jobs"></option>
+										</datalist>
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+					<script>
+						const searchPage = () => {
+							const searchValue = document.getElementById("searchID").value;
+
+							if( searchValue === "engineering"  ){
+								window.open("./engineering.html");
+							}
+
+							if( searchValue === "medical" ){
+								window.open("./medical.html");
+							}
+
+							if( searchValue === "arts"  ){
+								window.open("./arts.html");
+							}
+
+							if( searchValue === "commerce" ){
+								window.open("./commerce.html");
+							}
+
+							if( searchValue === "law" ){
+								window.open("./law.html");
+							}
+
+							if( searchValue === "government jobs" ){
+								window.open("./gov-jobs.html");
+							}
+						}
+					</script>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+						<section>
+								<form class="search" method="get" action="#">
+									<input type="search" id="anewSearch" placeholder="Search" onchange = "newSearch()" />
+								</form>
+						</section>
+
+						<script>
+							const newSearch = () => {
+								const searchValue = document.getElementById("anewSearch").value;
+								const newValue = document.getElementById("searchID").value;
+
+								if( (searchValue || newValue) === "engineering"  ){
+									window.open("./engineering.html");
+								}
+
+								if( (searchValue || newValue) === "medical" ){
+									window.open("./medical.html");
+								}
+
+								if( (searchValue || newValue)  === "arts"  ){
+									window.open("./arts.html");
+								}
+
+								if( (searchValue || newValue) === "commerce" ){
+									window.open("./commerce.html");
+								}
+
+								if( (searchValue || newValue) === "law" ){
+									window.open("./law.html");
+								}
+
+								if( (searchValue || newValue) === "government jobs" ){
+									window.open("./gov-jobs.html");
+								}
+							}
+							</script>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="engineering.html" target="_blank" rel="noreferrer noopener">
+											<h3>Engineering</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="medical.html" target="_blank" rel="noreferrer noopener">
+											<h3>Medical</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="arts.html" target="_blank" rel="noreferrer noopener">
+											<h3>Arts</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="commerce.html" target="_blank" rel="noreferrer noopener">
+											<h3>Commerce</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="law.html" target="_blank" rel="noreferrer noopener">
+											<h3>Law</h3>
+										
+										</a>
+									</li>
+									<li>
+										<a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">
+											<h3>Government Jobs</h3>
+										
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="signup/index.php" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="career-imp.html" target="_blank" rel="noreferrer noopener">Confused about your career? Start here.</a></h2>
+										
+									</div>
+									
+								</header>
+								<a href="career-imp.html" target="_blank" rel="noreferrer noopener" class="image featured"><img src="images/career2.png" alt="" /></a>
+								<p>Choosing a career path in life can be a daunting task and will affect your entire life. Hence proper information regarding every stream, branch and  subject needs to be taken into consideration. This article will guide you regarding various popular career paths available in the industry.</p>
+								<footer>
+									<ul class="actions">
+										<p></p>
+										<li><a href="career-imp.html" target="_blank" rel="noreferrer noopener" class="button large">Continue Reading</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart">0</a></li>
+										<li><a href="#" class="icon solid fa-comment">0</a></li>
+									</ul>
+								</footer>
+							</article>
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="top-skills.html" target="_blank" rel="noreferrer noopener">Learn these top skills while in college.</a></h2>
+										
+									</div>
+									
+								</header>
+								<a href="top-skills.html" target="_blank" rel="noreferrer noopener" class="image featured"><img src="images/skills.jpeg" alt="" /></a>
+								<p>One of the biggest adjustments for new college students is the newfound freedom. College students have an increase in personal responsibility and a lot less external structure. There are no set study times, no required meal times, no one to tell them when to sleep or get them up, an increase in their academic workload, a greater need to multi-task and balance and a myriad of new social opportunities and challenges.</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="top-skills.html" target="_blank" rel="noreferrer noopener" class="button large">Continue Reading</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart">0</a></li>
+										<li><a href="#" class="icon solid fa-comment">0</a></li>
+									</ul>
+								</footer>
+							</article>
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="gov-jobs.html" target="_blank" rel="noreferrer noopener">Government jobs for 12th pass candidates.</a></h2>
+									</div>
+									
+								</header>
+								<a href="gov-jobs.html" target="_blank" rel="noreferrer noopener" class="image featured"><img src="images/gov-jobs-img.png" alt="" /></a>
+								<p>Have you finished your 12th class and looking for government jobs in India? Then you have arrived at the correct platform to get job notifications across India. We have collected the jobs from various departments in the Indian government. All male and female candidates can apply for these job openings.</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="gov-jobs.html" target="_blank" rel="noreferrer noopener" class="button large">Continue Reading</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart">0</a></li>
+										<li><a href="#" class="icon solid fa-comment">0</a></li>
+									</ul>
+								</footer>
+							</article>
+
+						<!-- Pagination -->
+							<ul class="actions pagination">
+								
+								<li><a href="engineering.html" class="button large next">Next Page</a></li>
+							</ul>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/bulb3.jpeg" alt="" /></a>
+								<main class="site__main">
+									<div>
+									  <h1 class="site__main">
+										Your one stop<br />
+										destination for<br />
+										career related <br />
+										queries.<br />
+										
+									  </h1>
+									</div>
+								  </main>
+							</section>
+
+						<!-- Mini Posts -->
+							<section>
+								<div class="mini-posts">
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="engineering.html">These are some of the top jobs for engineers.</a></h3>
+												
+												<a href="#" class="author"></a>
+											</header>
+											<a href="engineering.html" class="image"><img src="images/engineer.jpeg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="medical.html">Exciting career options for healthcare professionals.</a></h3>
+												
+												<a href="#" class="author"></a>
+											</header>
+											<a href="medical.html" class="image"><img src="images/medical.jpeg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="law.html">Considering Law? These opportunities await you.</a></h3>
+												
+												<a href="#" class="author"></a>
+											</header>
+											<a href="law.html" class="image"><img src="images/law.jpeg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="commerce.html">What should you do after completing commerce?</a></h3>
+												
+												<a href="#" class="author"></a>
+											</header>
+											<a href="commerce.html" class="image"><img src="images/commerce.png" alt="" /></a>
+										</article>
+
+								</div>
+							</section>
+
+						<!-- Posts List -->
+							<section>
+								<ul class="posts">
+									<li>
+										<article>
+											<header class="left-1">
+												<h3><a href="cyber.html">Why Cybersecurity professionals are in demand?</a></h3>
+												
+											</header>
+											<a href="cyber.html" class="image"><img src="images/cyber.png" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header class="left-1">
+												<h3><a href="datasc.html">Hot Data Science career options</a></h3>
+												
+											</header>
+											<a href="datasc.html" class="image"><img src="images/data.jpeg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header class="left-1">
+												<h3><a href="startup.html">How to get hired at a startup</a></h3>
+												
+											</header>
+											<a href="startup.html" class="image"><img src="images/startup1.jpeg" alt="" /></a>
+										</article>
+									</li>
+									
+								</ul>
+							</section>
+
+						<!-- About -->
+							<section class="blurb">
+								<h2 style="background-color: chartreuse;">About</h2>
+								<p style="font-size: 1vw; color: black;">Profession.org.in is a skill centric website that aims to educate students about the various existing professions, their fundamental skill requirements and the resources available to grasp these requirements. This website is a one stop destination for learners for all their career related doubts. It provides articles jobs, the courses and skills one needs to master and the available resources for the same.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<ul class="icons">
+									<li><a href="https://twitter.com/imAmit2908?t=Kl-rYjHt8HVRtYoLeF9vgQ&s=08" class="icon brands fa-twitter" target="_blank" rel="noreferrer noopener"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100010560334003" class="icon brands fa-facebook-f" target="_blank" rel="noreferrer noopener"><span class="label">Facebook</span></a></li>
+									<li><a href="https://instagram.com/theamitchauhan__29?utm_medium=copy_link" class="icon brands fa-instagram" target="_blank" rel="noreferrer noopener"><span class="label">Instagram</span></a></li>
+									<li><a href="mailto:kshitijtiwari@protonmail.com" class="icon solid fa-envelope" target="_blank" rel="noreferrer noopener"><span class="label">Email</span></a></li>
+								</ul>
+							
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	<!-- SQL -->
+	
+
+</body>
+</html>
